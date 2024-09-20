@@ -1,5 +1,6 @@
 import "./App.css";
 import { Card } from "./Card";
+import ProductList from "./component/ProductList";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
         </section>
         <section className="px-20 py-12 bg-gray-100">
           <h2 className="text-3xl font-semibold text-black">Our products.</h2>
-          <div className="pt-8 flex gap-4 flex-wrap">
+          {/* <div className="pt-8 flex gap-4 flex-wrap">
             {Array.from({ length: 50 }).map(() => (
               <Card
                 alt=""
@@ -35,7 +36,8 @@ function App() {
                 price={1899.99}
               />
             ))}
-          </div>
+          </div> */}
+          <ProductList/>
         </section>
       </main>
     </>
